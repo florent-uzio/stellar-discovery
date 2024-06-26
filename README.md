@@ -6,7 +6,13 @@ This repo is to interact with the Stellar network.
 
 `npm install` to install the dependencies.
 
+Copy `.env.example` and rename it to `.env`.
+
 ## Usage
+
+To get some funded accounts you can use the `createMultipleFundedKeypairs` functions from the `wallet.ts` file.
+
+You can then paste the secret keys from the output to the `.env` file that you created in the step above (until a better solution is found).
 
 Update `src/index.ts` with the `Operation` you want to submit via the `sendTransaction` function.
 
